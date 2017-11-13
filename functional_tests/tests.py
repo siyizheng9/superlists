@@ -67,7 +67,6 @@ class NewVisitorTest(LiveServerTestCase):
         # Edith wonders whether the site will remember her list. Then she sees
         # that the site has generated a unique URL for her -- there is some 
         # expalanatory text to that effect.
-        self.fail('Finish the test!')
 
         # Satisfied, she goes back to sleep
 
@@ -93,7 +92,7 @@ class NewVisitorTest(LiveServerTestCase):
         # Francis visits the home page. There is no sign of Edith's
         # list
         self.browser.get(self.live_server_url)
-        page_text = self.browser.find_element_by_tag_name('body')
+        page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy peacock feathers', page_text)
         self.assertNotIn('make a fly', page_text)
 
