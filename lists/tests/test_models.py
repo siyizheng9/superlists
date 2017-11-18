@@ -60,4 +60,3 @@ class ListAndItemModelTest(TestCase):
     def test_string_representation(self):
         item = Item(text='some text')
         self.assertEqual(str(item), 'some text')
-
