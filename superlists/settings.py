@@ -25,7 +25,7 @@ SECRET_KEY = 'n7-$$vzezvz=92*nky)ac&d^2-6lb7p)ekr$v1-_xukp9u5o(0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['superlists-staging.me']
+ALLOWED_HOSTS = ['superlists-staging.me']
 
 
 # Application definition
