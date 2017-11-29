@@ -17,7 +17,7 @@ class LoginTest(FunctionalTest):
         # and notices a "Log in" section in the navbar for the first time
         # It's telling her to enter her email address, so she does
         if self.staging_server:
-            test_email = 'superlists_test@fastmail.com'
+            test_email = 'superlists.test@yandex.com'
         else:
             test_email = 'edith@example.com'
         self.browser.get(self.live_server_url)
@@ -62,10 +62,10 @@ class LoginTest(FunctionalTest):
 
         email_id = None
         start = time.time()
-        inbox = poplib.POP3_SSL('pop.fastmail.com')
+        inbox = poplib.POP3_SSL('pop.yandex.com')
         try:
             inbox.user(test_email)
-            inbox.pass_(os.environ['FAST_PASSWORD'])
+            inbox.pass_(os.environ['YANDEX_PASSWORD'])
             while time.time() - start < 60:
                 # get 10 newest messages
                 count, _ = inbox.stat()

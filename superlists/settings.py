@@ -25,7 +25,7 @@ SECRET_KEY = 'n7-$$vzezvz=92*nky)ac&d^2-6lb7p)ekr$v1-_xukp9u5o(0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['superlists-staging.me']
+ALLOWED_HOSTS = ['superlists-staging.me', '127.0.0.1']
 
 
 # Application definition
@@ -144,8 +144,8 @@ LOGGING = {
     'root': {'level': 'INFO'},
 }
 
-EMAIL_HOST = 'smtp.fastmail.com'
-EMAIL_HOST_USER = 'superlists_me@fastmail.com'
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_HOST_USER = 'superlists.me@yandex.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_PORT = 465
-EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
