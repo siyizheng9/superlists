@@ -144,8 +144,8 @@ LOGGING = {
     'root': {'level': 'INFO'},
 }
 
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_HOST_USER = 'superlists.me@outlook.com'
+EMAIL_HOST = 'smtp.fastmail.com'
+EMAIL_HOST_USER = 'superlists_me@fastmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_PORT = 587
+EMAIL_PORT = 465
 EMAIL_USE_TLS = True
