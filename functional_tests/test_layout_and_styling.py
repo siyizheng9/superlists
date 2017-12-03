@@ -1,7 +1,9 @@
 from .base import FunctionalTest
+import unittest
 
 
 class LayoutAndStylingTest(FunctionalTest):
+    @unittest.skip
     def test_layout_and_styling(self):
         # Edth goes to the home page
         self.browser.get(self.live_server_url)
