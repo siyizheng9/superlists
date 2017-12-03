@@ -22,9 +22,6 @@ def wait(fn):
     return modified_fn
 
 
-
-
-
 class FunctionalTest(StaticLiveServerTestCase):
 
     def setUp(self):
