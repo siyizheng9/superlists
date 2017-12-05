@@ -1,0 +1,6 @@
+.gitignore
+vagrant
+.vscode
+Dockerfile
+.dockerignore
+.git
